@@ -53,7 +53,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Titanic"]) & SUDOERS)
+@bot.on_message(filters.command(["gecserver"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('File भेजो जल्दी जो डाउनलोड करना हैं')
     input: Message = await bot.listen(editable.chat.id)
